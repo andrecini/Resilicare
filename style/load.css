@@ -83,3 +83,11 @@
     }
   }
 
+  @media (max-width: 600px)
+  {
+      .dot {
+        width: 25px;
+        height: 25px;
+      }
+  }
+
