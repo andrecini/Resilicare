@@ -49,6 +49,10 @@ body::-webkit-scrollbar {
     background-color: rgb(19, 114, 119) !important;
 }
 
+.font-bold-standard {
+    font-family: "lato-bold";
+}
+
 .carousel-img {
     height: 70vh; width: 100vw;
 }
