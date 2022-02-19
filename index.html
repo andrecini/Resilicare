@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilicare</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="libs/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="libs/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="style/site.css">
+</head>
+
+<body class="bg-standard">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+            <div class="container-fluid">
+                <img src="img/logo.png" class="logo my-auto mx-1">
+                <a class="navbar-brand" href="#">Resilicare</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Parcerias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-img active">
+                    <img src="img/idosos/p-g-cafe.jpg" alt="Los Angeles" class="d-block w-100 h-100 image-self-tuning">
+                </div>
+                <div class="carousel-item carousel-img">
+                    <img src="img/idosos/p-g-jogo-1.jpg" alt="New York" class="d-block w-100 h-100 image-self-tuning">
+                </div>
+                <div class="carousel-item carousel-img">
+                    <img src="img/idosos/p-g-casal-2.jpg" alt="Chicago" class="d-block w-100 h-100 image-self-tuning">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Presentation -->
+        <div id="presentation" class="row container-fluid">
+            <div class="col-6 text-center" id="Image">
+                <img id="image-presentation" src="img/idosos/r-g-avo.jpg" class="mt-5 shadow-lg image-self-tuning">
+            </div>
+            <div class="col-6 text-center" id="content">
+                <div class="my-5 text-start" id="Text">
+                    <h3 class="b-style-2 b-only-bottom">&ensp;Sobre nós</h5>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+                            ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+                            tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+                            ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+                            et sapien ullamcorper pharetra. Donec eu libero sit amet quam egestas semper.
+                            Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est
+                            et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo
+                            vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum,
+                            eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim
+                            in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus
+                            faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam
+                            erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus,
+                            metus</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div id="Text" class="w-50 text-end">
+            <h3 id="topic-title" class="w-100">Conheça nossos Serviços &ensp;</h3>
+        </div>
+        <div class="row container-fluid px-6 mx-0 mt-5">
+            <div id="reorganize-card" class="col px-4">
+                <div class="card">
+                    <img src="img/idosos/p-m-celular.jpg" class="card-img-top image-self-tuning" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="reorganize-card" class="col px-4">
+                <div class="card">
+                    <img src="img/idosos/p-m-cozinha.jpg" class="card-img-top image-self-tuning" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="reorganize-card" class="col px-4">
+                <div class="card">
+                    <img src="img/idosos/p-m-desenho.jpg" class="card-img-top image-self-tuning" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="reorganize-card" class="col px-4">
+                <div class="card">
+                    <img src="img/idosos/p-m-livros.jpg" class="card-img-top image-self-tuning" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Depositions -->
+        <div class="container-fluid mt-5 p-0">
+            <div class="p-0 py-3 text-center div-team">
+                <h1 class="text-white text-shadow">Depoimentos</h1>
+
+                <div class="container mx-auto my-4">
+                    <div class="row">
+                        <div id="employee-card" class="col-lg-4 mx-auto">
+                            <div id="employee-card" class="card mb-3 mx-auto">
+                                <div class="row p-0">
+                                    <div class="col-md-4">
+                                        <img id="employee-img" src="img/ex10.jpg"
+                                            class="img-fluid rounded-start image-self-tuning w-100 h-100">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Carla</h5>
+                                            <p class="card-text">"This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="employee-card" class="col-lg-4 mx-auto">
+                            <div id="employee-card" class="card mb-3 mx-auto">
+                                <div class="row p-0">
+                                    <div class="col-md-4">
+                                        <img id="employee-img" src="img/ex11.jpg"
+                                            class="img-fluid rounded-start image-self-tuning w-100 h-100">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Marcos</h5>
+                                            <p class="card-text">"This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="employee-card" class="col-lg-4 mx-auto">
+                            <div id="employee-card" class="card mb-3 mx-auto">
+                                <div class="row p-0">
+                                    <div class="col-md-4">
+                                        <img id="employee-img" src="img/ex12.jpg"
+                                            class="img-fluid rounded-start image-self-tuning w-100 h-100">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Laís</h5>
+                                            <p class="card-text">"This is a wider card with supporting text below as a
+                                                natural
+                                                lead-in to additional content. This content is a little bit longer."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Galleries -->
+        <div id="Text" class="w-50 text-end mt-5">
+            <h3 id="topic-title" class="w-100">Galeria &ensp;</h3>
+        </div>
+        <div class="container-fluid mt-5 px-5">
+            <div class="row text-center text-lg-start px-2">
+
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/pWkk7iiCoDM/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aob0ukAYfuI/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EUfxH-pze7s/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/M185_qYH8vg/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/sesveuG_rNo/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/AvhMzHwiE_0/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6 img-hidden">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/2gYsZUmockw/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6 img-hidden">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6 img-hidden">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/8mUEy0ABdNE/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6 img-hidden">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/G9Rfc1qccH4/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6 img-hidden">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/aJeH0KcFkuc/400x300" alt="">
+                  </a>
+                </div>
+                <div id="img-galleries" class="col-lg-3 col-md-4 col-6 img-hidden">
+                  <a href="#" class="d-block mb-4 h-100">
+                    <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/p2TQ-3Bh3Oo/400x300" alt="">
+                  </a>
+                </div>
+            </div>            
+        </div>
+
+        <!-- Contact -->
+        <div class="container-fluid mt-5">
+            <div id="contact" class="row card mx-auto">
+                <div id="contact-img-div" class="col p-0">
+                    <img id="contact-img-div" src="img/ex13.jpg" class="image-self-tuning">
+                </div>
+                <div id="contact-content-div" class="col">                    
+                    <div class="w-100 text-center">
+                        <h2 id="contact-title" class="mt-4">CONTATE-NOS</h2>
+                        <div class="underline-title"></div>
+                    </div>
+                    <div class="mx-auto px-5 mt-3">
+                        <div class="row my-1">
+                            <label for="user-email" style="padding-top:13px">Nome</label>
+                            <input id="user-name" class="form-content bg-white" type="text" name="text" autocomplete="on" required />
+                            <div class="form-border"></div>
+                        </div>
+                        <div class="row my-1">
+                            <label for="user-email" style="padding-top:13px">Email</label>
+                            <input id="user-email" class="form-content bg-white" type="email" name="email" autocomplete="on" required />
+                            <div class="form-border"></div>
+                        </div>
+                        <div class="row my-1">
+                            <label for="user-email" style="padding-top:13px">Celular</label>
+                            <input id="user-phone" class="form-content bg-white" type="tel" name="phone" autocomplete="on" required />
+                            <div class="form-border"></div>
+                        </div>
+                    </div>
+                    <div class="w-100 text-center mt-4">
+                        <input id="submit-btn" type="submit" name="submit" value="Enviar" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- partnerships -->
+        <div id="Text" class="w-50 text-end mt-5">
+            <h3 id="topic-title" class="w-100">Parcerias &ensp;</h3>
+        </div>
+        <div id="partnerships" class="container-fluid mt-5 px-5">
+            <div id="partnerships-div" class="row px-5">
+                <div class="col">
+                    <div class="circle bg-white mx-auto">
+                        <img src="img/ex14.png" class="circle b-style-1" style="border-width: 5px !important;" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="circle bg-white mx-auto">
+                        <img src="img/ex15.png" class="circle b-style-1" style="border-width: 5px !important;" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="circle bg-white mx-auto">
+                        <img src="img/ex16.jpg" class="circle b-style-1" style="border-width: 5px !important;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <nav id="footer" class="navbarnavbar-dark bg-dark mt-5" style="background-color: rgb(19, 114, 119) !important;">
+            <div class="container-fluid justify-content-end">
+                <div class="nav justify-content-end">
+                    <a class=" my-auto" href="">
+                        <img src="img/face.png" class="logo-link my-auto mx-2"></img>
+                    </a>
+                    <a class=" my-auto" href="">
+                        <img src="img/linkedn.png" class="logo-link my-auto mx-2"></img>
+                    </a>
+                    <a class=" my-auto" href="https://www.instagram.com/resilicare/">
+                        <img src="img/insta.png" class="logo-link my-auto mx-2"></img>
+                    </a>
+                    <a class=" my-auto" href="https://goo.gl/maps/g7tsPqj9c8ZtTSHX8">
+                        <img src="img/maps.png" class="logo-link my-auto mx-2"></img>
+                    </a>
+                    <a class=" my-auto" href="https://wa.me/5511994567410">
+                        <img src="img/whats.png" class="logo-link my-auto mx-2"></img>
+                    </a>
+                    <img src="img/logo.png" class="logo-footer my-auto" href="#"></img>
+                </div>
+            </div>
+        </nav>
+    </footer>
+</body>
+
+</html>
