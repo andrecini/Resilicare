@@ -1,0 +1,85 @@
+.load {
+    position: fixed;
+    top: 50%;
+    left: 40%;
+    margin-left: 10%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 9999;
+  }
+  .dot {
+    width: 50px;
+    height: 50px;
+    background: #3ac;
+    border-radius: 100%;
+    display: inline-block;
+    animation: slide 1s infinite;
+  }
+  .dot:nth-child(1) {
+    animation-delay: 0.1s;
+    background: rgb(19, 114, 119);
+  }
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+    background: rgb(114, 199, 46);
+  }
+  .dot:nth-child(3) {
+    animation-delay: 0.3s;
+    background: rgb(227, 246, 218);
+  }
+  .dot:nth-child(4) {
+    animation-delay: 0.4s;
+    background: rgb(213, 255, 255);
+  }
+  .dot:nth-child(5) {
+    animation-delay: 0.5s;
+    background: rgb(50, 128, 170);
+  }
+  @-moz-keyframes slide {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @-o-keyframes slide {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes slide {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
