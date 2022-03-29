@@ -1,11 +1,11 @@
-window.addEventListener("load", function() {
-    var loadContainer = document.querySelector("#load");
-    var contentContainer = document.querySelector("#content");
+
+
+window.onload = function() {
+  console.log("Pronto")
+
+  var loadContainer = document.querySelector("#load");
+  var contentContainer = document.querySelector("#content");    
+  loadContainer.style.display = "none";
+  contentContainer.style.cssText = "display: block !important"
   
-  setTimeout(function() {
-      
-        loadContainer.style.display = "none";
-        contentContainer.style.cssText = "display: block !important"
-    
-  }, 3000);
-});
+};
