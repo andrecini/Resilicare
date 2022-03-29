@@ -15,6 +15,16 @@
     src: url(../fonts/Lato-Black.ttf);
 }
 
+:root {
+    --light-blue: rgb(241, 255, 255);
+    --dark-green: rgb(19, 114, 119);
+    --light-green: rgb(227, 246, 218)02124;
+    --basic-blue: rgb(50, 128, 170);
+    --basic-green: rgb(114, 199, 46);
+
+    --hover: #{adjust-hue(var(--dark-green), 45deg)};
+}
+
 body::-webkit-scrollbar {
     width: 12px;               
 }
@@ -114,6 +124,19 @@ body::-webkit-scrollbar {
     min-height: 360px;
 }
 
+.btn {
+    color: var(--dark-green);
+    font-family: "lato";
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: var(--dark-green) !important;
+    color: white !important;
+    font-family: "lato" !important;
+    font-weight: 600 !important;
+}
+
 .card {
     border: none;
     box-shadow: 1px 1px 10px gray;
@@ -165,7 +188,7 @@ body::-webkit-scrollbar {
 }
 
 .underline-title {
-    background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+    background: -webkit-linear-gradient(right, var(--basic-green), var(--dark-green));
     height: 4px;
     margin: -1.1rem auto 0 auto;
     width: 280px;
@@ -173,7 +196,7 @@ body::-webkit-scrollbar {
 }
   
 .form-border {
-    background: -webkit-linear-gradient(right, #a6f77b, #2ec06f);
+    background: -webkit-linear-gradient(right,  var(--basic-green), var(--dark-green));
     height: 2px;
     width: 100%;
 }
@@ -186,7 +209,7 @@ body::-webkit-scrollbar {
 }
 
 #submit-btn {
-    background: -webkit-linear-gradient(right, #a6f77b, #2dbd6e);
+    background: -webkit-linear-gradient(right,  var(--basic-green), var(--dark-green));
     border: none;
     border-radius: 21px;
     box-shadow: 0px 1px 8px #24c64f;
@@ -213,8 +236,8 @@ body::-webkit-scrollbar {
 }
 
 .circle {
-    width: 200px !important;
-    height: 200px !important;
+    width: 100px !important;
+    height: 100px !important;
     border-radius: 100px;
 }
 
