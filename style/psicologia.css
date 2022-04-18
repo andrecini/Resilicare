@@ -1,0 +1,44 @@
+#image-psicologia {
+    height: 80%;
+    width: 30vw;
+    max-width: 600px;
+    border-radius: 10px; 
+    box-shadow: inset gray 4px;
+}
+
+#Image {
+    height: max-content;
+}
+
+@media (max-width: 890px)
+{
+    #presentation {
+        flex-direction: column !important;
+    }
+
+    #Image{
+        width: 100% !important;
+    }
+
+    #Text{
+        width: 100% !important;
+        margin-top: 15px;
+    }
+
+    #content{
+        width: 100% !important;
+    }
+
+    #image-psicologia{
+        width: 100% !important;
+        max-height: 250px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    #Text {
+        padding-top: 15px !important;
+    }
+}
+
+

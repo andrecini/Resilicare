@@ -14,33 +14,63 @@
     font-family: "lato-black";
     src: url(../fonts/Lato-Black.ttf);
 }
+@font-face {
+    font-family: "Baskerville";
+    src: url(../fonts/BaskervilleBT.ttf);
+}
 
 :root {
     --light-blue: rgb(241, 255, 255);
     --dark-green: rgb(19, 114, 119);
-    --light-green: rgb(227, 246, 218)02124;
+    --light-green: rgb(227, 246, 218);
     --basic-blue: rgb(50, 128, 170);
     --basic-green: rgb(114, 199, 46);
-
+    
     --hover: #{adjust-hue(var(--dark-green), 45deg)};
+}
+
+#back-to-top {
+    background-color: var(--dark-green);
+    border-radius: 65px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, .75);
+    color: var(--light-green);
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 40px;
+    z-index: 9999;
+}
+
+#back-to-top::after {
+    content: '▲';
+    display: flex;
+    justify-content: center;
+    padding-left: 1px;
+    padding-top: 5px;
 }
 
 body::-webkit-scrollbar {
     width: 12px;               
 }
   
-  body::-webkit-scrollbar-track {
-    background: rgb(231, 255, 221);        
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: rgb(19, 142, 149);    
-    border-radius: 20px;     
-    border: 3px solid rgb(225, 254, 187);  
-  }
+body::-webkit-scrollbar-track {
+background: rgb(231, 255, 221);        
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: rgb(19, 142, 149);    
+border-radius: 20px;     
+border: 3px solid rgb(225, 254, 187);  
+}
 
 .logo {
     height: 60px;
+}
+
+.logo-icon {
+    height: 40px;
 }
 
 .logo-link {
@@ -63,19 +93,12 @@ body::-webkit-scrollbar {
     font-family: "lato-bold";
 }
 
-.carousel-img {
-    height: 70vh; width: 100vw;
-}
-
 .image-self-tuning {
     object-fit: cover;
 }
 
-#image-presentation {
-    height: 80%;
-    width: 30vw;
-    border-radius: 10px; 
-    box-shadow: inset gray 4px;
+.text-presentation {
+    font-size: 19px;
 }
 
 #Text{
@@ -105,6 +128,12 @@ body::-webkit-scrollbar {
 .b-only-bottom{
     border-top: none !important;
     border-left: none !important;
+    border-right: none !important;
+}
+
+.b-only-start{
+    border-top: none !important;
+    border-bottom: none !important;
     border-right: none !important;
 }
 
@@ -152,247 +181,33 @@ body::-webkit-scrollbar {
     transform: scale(1.01);
 }
 
-.div-team {
-    background-image: url(../img/idosos/r-g-social-2.jpg);
-    background-size: 100%;
-    background-position: center;
+#backquote {
+    background-color: var(--light-green);
 }
 
-#employee-card {
-    max-width: 400px !important;
-    max-height: 225px !important;
-}
-
-.text-shadow {
-    text-shadow: 2px 2px 2px lightgray;
-}
-
-#img-galleries:hover {
-    -webkit-transform: scale(1.01);
-    -ms-transform: scale(1.01);
-    transform: scale(1.01);
-}
-
-#contact {
-    width: 700px;
-    height: 420px;
-    border-radius: 10px;
-    background-color: white;
-}
-
-#contact-title {
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 4px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.underline-title {
-    background: -webkit-linear-gradient(right, var(--basic-green), var(--dark-green));
-    height: 4px;
-    margin: -1.1rem auto 0 auto;
-    width: 280px;
-    border-radius: 5px;
-}
+ul {
+    list-style: none; 
+  }
   
-.form-border {
-    background: -webkit-linear-gradient(right,  var(--basic-green), var(--dark-green));
-    height: 2px;
-    width: 100%;
-}
+  ul li::before {
+    content: "\2022";
+    color: var(--dark-green); 
+    display: inline-block; 
+    font-weight: 600;
+    width: 1em;
+    margin-left: -1em; 
+  }
 
-.form-content {
-    background: #fbfbfb;
-    border: none;
-    outline: none;
-    padding-top: 14px;
-}
+ .link{
+     color: var(--dark-green);
+ }
 
-#submit-btn {
-    background: -webkit-linear-gradient(right,  var(--basic-green), var(--dark-green));
-    border: none;
-    border-radius: 21px;
-    box-shadow: 0px 1px 8px #24c64f;
-    cursor: pointer;
-    color: white;
-    font-family: "Raleway SemiBold", sans-serif;
-    height: 42.3px;
-    margin: 0 auto;
-    transition: 0.25s;
-    width: 153px;
-}
+ .link:hover {
+     color:var(--basic-green);
+ }
 
-#submit-btn:hover {
-    box-shadow: 0px 1px 18px #24c64f;
-}
-
-#contact-img-div {
-    height: 100%;
-    width: 300px;
-}
-
-#contact-content-div{
-    width: 400px;
-}
-
-.circle {
-    width: 100px !important;
-    height: 100px !important;
-    border-radius: 100px;
-}
-
-@media (max-width: 992px)
-{ 
-    #employee-card{
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 992px)
-{  
-    .div-team {
-        background-size: 300%;
-    }
-}
-
-@media (max-width: 990px)
-{  
-    .img-hidden {
-        display: none;
-    }
-}
-
-@media (max-width: 890px)
-{
-    #presentation {
-        flex-direction: column !important;
-    }
-
-    #Image{
-        width: 100% !important;
-    }
-
-    #Text{
-        width: 100% !important;
-    }
-
-    #content{
-        width: 100% !important;
-    }
-
-    #image-presentation{
-        width: 100% !important;
-        max-height: 250px !important;
-    }
-}
-
-@media (max-width: 840px)
-{
-    .circle {
-        width: 150px !important;
-        height: 150px !important;
-        border-radius: 100px;
-    }
-    
-}
-
-@media (max-width: 810px)
-{
-    #contact {
-        width: 50%;
-    }
-
-    #contact-img-div {
-        display: none;
-    }
-    
-    #contact-content-div{
-        width: 100%;
-    }
-    
-}
-
-@media (max-width: 690px)
-{
-    .circle {
-        width: 125px !important;
-        height: 125px !important;
-    }
-    
-}
-
-@media (max-width: 620px)
-{
-    #contact {
-        width: 75%;
-    }
-}
-
-@media (max-width: 615px)
-{
-    .circle {
-        width: 110px !important;
-        height: 110px !important;
-    }
-    
-}
-
-@media (max-width: 520px)
-{
-    #contact {
-        width: 90%;
-    }
-}
-
-@media (max-width: 768px)
-{
-    #employee-img {
-        max-height: 88px !important;
-    }
-
-    .carousel-img {
-        height: 35vh;
-    }
-}
-
-@media (max-width: 615px)
-{
-    .circle {
-        width: 80px !important;
-        height: 80px !important;
-    }
-    
-}
-
-@media (max-width: 480px)
-{
-    #partnerships-div {
-        padding: 0 !important;
-    }    
-}
-
-@media (max-width: 440px)
-{
+@media (max-width: 800px) {
     #topic-title {
-        font-size: 27px !important;
-    }
-}
-
-@media (max-width: 384px)
-{
-    #partnerships {
-        padding: 20px !important;
-        margin-top: 20px !important;
-    }
-    
-    #footer {
-        margin-top: 0px !important;
-    }
-}
-
-@media (max-width: 346px)
-{
-    #employee-card{
-        max-height: 400px !important;
+        font-size: 30px !important;
     }
 }
