@@ -206,6 +206,10 @@ ul {
      color:var(--basic-green);
  }
 
+ .parceria {
+     border-radius: 100%;
+ }
+
 @media (max-width: 800px) {
     #topic-title {
         font-size: 30px !important;

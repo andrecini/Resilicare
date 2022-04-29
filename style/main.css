@@ -15,10 +15,6 @@
     background-position: center;
 }
 
-#employee-card {
-    max-width: 400px !important;
-    max-height: 225px !important;
-}
 
 #img-galleries:hover {
     -webkit-transform: scale(1.01);
@@ -245,9 +241,3 @@
     }
 }
 
-@media (max-width: 346px)
-{
-    #employee-card{
-        max-height: 400px !important;
-    }
-}
