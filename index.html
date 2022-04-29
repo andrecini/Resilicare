@@ -251,7 +251,40 @@
                     </div>
                 </div>
             </div>
+            <div class="container col-8 mt-5">
+                <div class="card w-100 h-100">
+                    <div class="row w-100 h-100 p-0">
+                        <div class="w-100 h-100 p-2 text-center">
+                            <form action="https://formsubmit.co/contatoresilicare@gmail.com" method="POST">
+                                <div class="w-100 text-center">
+                                    <h2 id="contact-title" class="mt-4 px-0 mx-0">Deixe um Depoimento</h2>
+                                </div>
+                                <div class="mx-auto px-5 mt-3">
+                                    <div class="row my-1">
+                                        <label for="user-email" style="padding-top:13px">Nome</label>
+                                        <input id="user-name" class="form-content bg-white" type="text" name="Nome"
+                                            autocomplete="on" required />
+                                        <div class="form-border"></div>
+                                    </div>
+                                    <div class="row my-1">
+                                        <label for="user-email" style="padding-top:13px">Depoimento</label>
+                                        <textarea id="user-phone" class="form-content bg-white" name="Depoimento"
+                                            autocomplete="on" required></textarea>
+                                        <div class="form-border"></div>
+                                    </div>
+                                </div>
+                                <input type="hidden" name="_captcha" value="false">
+                                <input id="redirect" type="hidden" name="_next">
+                                <div class="w-100 text-center mt-4 mb-4">
+                                    <input id="submit-btn" type="submit" name="submit" value="Enviar" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                  </div>
+            </div>
 
+            
             <!-- Galleries -->
             <div id="galleries" class="mt-5">
                 <div id="Text" class="w-50 text-end mt-5">
@@ -373,9 +406,9 @@
                                 </div>
                             </div>
                             <input type="hidden" name="_captcha" value="false">
-                            <input id="redirectToThanks" type="hidden" name="_next">
+                            <input id="redirect-contact" type="hidden" name="_next" value="pages/thanks.html">
                             <div class="w-100 text-center mt-4">
-                                <input id="submit-btn" type="submit" name="submit" value="Enviar" />
+                                <input id="submit-btn" type="submit" name="submit"/>
                             </div>
                         </form>
                     </div>
@@ -464,6 +497,6 @@
 <script src="script/load.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
-    var url = window.location.href + "pages/thanks.html";
-    document.getElementById('redirectToThanks').value = url;
+    document.getElementById("redirect").value = location.origin + "/pages/thanks.html";
+    document.getElementById("redirect-contact").value = location.origin + "/pages/thanks.html";
 </script>
